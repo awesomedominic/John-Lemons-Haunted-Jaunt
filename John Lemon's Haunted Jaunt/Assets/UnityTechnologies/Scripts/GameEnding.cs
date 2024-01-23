@@ -10,6 +10,7 @@ public class GameEnding : MonoBehaviour
     public GameObject player;
     public CanvasGroup exitBackgroundImageCanvasGroup;
     public CanvasGroup caughtBackgroundImageCanvasGroup;
+    
     bool m_IsPlayerExit;
     bool m_IsPlayerCaught;
     float m_Timer;
