@@ -40,7 +40,9 @@ public class GameEnding : MonoBehaviour
     {
         m_Timer += Time.deltaTime;
         imageCanvasGroup.alpha = m_Timer / fadeDuration;
-
+        
+    if (m_Timer > fadeDuration + displayImageDuration)
+    {
         if(doRestart)
         {
             SceneManager.LoadScene(0);
@@ -49,6 +51,7 @@ public class GameEnding : MonoBehaviour
         {
             Application.Quit();
         }
+    }
     }
 
     void OnTriggerEnter(Collider other)
